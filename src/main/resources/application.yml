@@ -1,0 +1,27 @@
+server:
+  port: 8090
+  session-timeout: 30
+  tomcat.max-threads: 0
+  tomcat.uri-encoding: UTF-8
+
+spring:
+  datasource:
+    url : jdbc:mysql://localhost:3306/vueblog
+    username : root
+    password : root
+    driverClassName : com.mysql.jdbc.Drive
+  http:
+    encoding:
+      force: true
+      charset: UTF-8
+  freemarker:
+    allow-request-override: false
+    cache: false
+    check-template-location: true
+    charset: UTF-8
+    content-type: text/html; charset=utf-8
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
+    suffix: .ftl
+    template-loader-path: classpath:/templates

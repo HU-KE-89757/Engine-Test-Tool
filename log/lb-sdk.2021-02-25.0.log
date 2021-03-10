@@ -1,0 +1,63 @@
+2021-02-25 11:31:23,771 371  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：这里是
+2021-02-25 11:31:23,782 382  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 删除：安徽
+2021-02-25 11:31:23,783 383  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：科大讯飞股份
+2021-02-25 11:31:23,783 383  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：有限
+2021-02-25 11:31:23,784 384  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：公司
+2021-02-25 11:31:23,784 384  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 删除：哈
+2021-02-25 15:00:41,113 252  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：这里是
+2021-02-25 15:00:41,116 255  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 删除：安徽
+2021-02-25 15:00:41,116 255  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：科大讯飞股份
+2021-02-25 15:00:41,116 255  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：有限
+2021-02-25 15:00:41,116 255  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：公司
+2021-02-25 15:00:41,116 255  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 删除：哈
+2021-02-25 16:27:07,809 335  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：这里是
+2021-02-25 16:27:07,814 340  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 删除：安徽
+2021-02-25 16:27:07,814 340  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：科大讯飞股份
+2021-02-25 16:27:07,814 340  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：有限
+2021-02-25 16:27:07,814 340  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：公司
+2021-02-25 16:27:07,814 340  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 删除：哈
+2021-02-25 16:44:11,813 1437 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 16:44:13,223 2847 [main] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-02-25 16:44:13,223 2847 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-25 17:00:03,890 1647 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 17:00:04,067 1824 [main] ERROR com.tuling.asr.sdk.client.IstRestClient - 请求服务错误
+2021-02-25 17:06:46,469 1755 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 17:06:46,713 1999 [main] ERROR com.tuling.asr.sdk.client.IstRestClient - 请求服务错误
+2021-02-25 17:07:03,782 10322 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 17:07:03,948 10488 [main] ERROR com.tuling.asr.sdk.client.IstRestClient - 请求服务错误
+2021-02-25 17:09:19,849 1463 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 17:09:19,924 1538 [main] ERROR com.tuling.asr.sdk.client.IstRestClient - 请求服务错误
+2021-02-25 17:11:12,261 936  [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 17:11:12,353 1028 [main] ERROR com.tuling.asr.sdk.client.IstRestClient - 请求服务错误
+2021-02-25 17:12:45,659 35923 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 17:12:46,455 36719 [main] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-02-25 17:12:46,456 36720 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-25 17:13:07,769 848  [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 17:13:08,243 1322 [main] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-02-25 17:13:08,243 1322 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-25 17:13:08,244 1323 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 17:13:09,101 2180 [main] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":95,\"wp\":\"n\"}]},{\"bg\":96,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":96,\"wc\":\"1.0000\",\"we\":143,\"wp\":\"n\"}]},{\"bg\":144,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":144,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":194,\"wp\":\"n\"}]},{\"bg\":195,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":195,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市蜀山区科大讯飞股份有限公司。"}]}
+2021-02-25 17:13:09,102 2181 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-25 17:25:52,917 1146 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 17:25:54,419 2648 [main] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":95,\"wp\":\"n\"}]},{\"bg\":96,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":96,\"wc\":\"1.0000\",\"we\":142,\"wp\":\"n\"}]},{\"bg\":143,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":143,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":194,\"wp\":\"n\"}]},{\"bg\":195,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":195,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市蜀山区科大讯飞股份有限公司。"}]}
+2021-02-25 17:25:54,419 2648 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-25 19:15:17,567 975  [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 19:15:18,003 1411 [main] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-02-25 19:15:18,004 1412 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-25 19:15:18,005 1413 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 19:15:18,914 2322 [main] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-02-25 19:15:18,914 2322 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-25 19:15:18,919 2327 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 19:15:19,134 2542 [main] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-02-25 19:15:19,134 2542 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-25 19:15:19,144 2552 [main] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：安徽省合肥市啊蜀山区科大讯飞股份有限公司。
+2021-02-25 19:16:12,109 878  [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 19:16:12,527 1296 [main] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-02-25 19:16:12,528 1297 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-25 19:16:12,529 1298 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-25 19:16:14,133 2902 [main] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-02-25 19:16:14,134 2903 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-25 19:16:14,145 2914 [main] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：安徽省
+2021-02-25 19:16:14,145 2914 [main] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：合肥市啊蜀山区
+2021-02-25 19:16:14,145 2914 [main] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：科大讯飞股份有限公司
+2021-02-25 19:16:14,145 2914 [main] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：。

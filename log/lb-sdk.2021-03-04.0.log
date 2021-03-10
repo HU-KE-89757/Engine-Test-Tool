@@ -1,0 +1,920 @@
+2021-03-04 08:54:33,905 1749 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 12252 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 08:54:33,912 1756 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 08:54:35,665 3509 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 08:54:35,685 3529 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 08:54:35,702 3546 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 08:54:35,703 3547 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 08:54:35,715 3559 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 08:54:35,899 3743 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 08:54:35,899 3743 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1835 ms
+2021-03-04 08:54:36,257 4101 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 08:54:36,776 4620 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 08:54:36,795 4639 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 08:54:36,973 4817 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 08:54:36,979 4823 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 4.152 seconds (JVM running for 6.583)
+2021-03-04 08:54:48,154 15998 [http-nio-8090-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 08:54:48,155 15999 [http-nio-8090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 08:54:48,165 16009 [http-nio-8090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2021-03-04 08:54:48,245 16089 [http-nio-8090-exec-2] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at java.io.File.<init>(File.java:277)
+	at com.mercury.demo.server.ProcessFileImpl.processFileImpl(ProcessFileImpl.java:41)
+	at com.mercury.demo.controller.TransResultController.engineTransChangeResult(TransResultController.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-04 08:55:10,182 38026 [http-nio-8090-exec-9] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at java.io.File.<init>(File.java:277)
+	at com.mercury.demo.server.ProcessFileImpl.processFileImpl(ProcessFileImpl.java:41)
+	at com.mercury.demo.controller.TransResultController.engineTransChangeResult(TransResultController.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-04 08:55:41,075 68919 [http-nio-8090-exec-2] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at java.io.File.<init>(File.java:277)
+	at com.mercury.demo.server.ProcessFileImpl.processFileImpl(ProcessFileImpl.java:41)
+	at com.mercury.demo.controller.TransResultController.engineTransChangeResult(TransResultController.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-04 09:10:34,822 962666 [Thread-11] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:10:51,072 1379 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 8624 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 09:10:51,080 1387 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 09:10:52,832 3139 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 09:10:52,851 3158 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:10:52,865 3172 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 09:10:52,865 3172 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 09:10:52,876 3183 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 09:10:53,042 3349 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 09:10:53,043 3350 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1802 ms
+2021-03-04 09:10:53,345 3652 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:10:53,746 4053 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:10:53,760 4067 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 09:10:53,901 4208 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 09:10:53,905 4212 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 3.675 seconds (JVM running for 5.808)
+2021-03-04 09:12:14,428 84735 [Thread-10] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:12:31,875 1193 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 26300 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 09:12:31,881 1199 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 09:12:33,710 3028 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 09:12:33,729 3047 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:12:33,743 3061 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 09:12:33,743 3061 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 09:12:33,752 3070 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 09:12:33,911 3229 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 09:12:33,911 3229 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1799 ms
+2021-03-04 09:12:34,215 3533 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:12:34,672 3990 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:12:34,687 4005 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 09:12:34,818 4136 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 09:12:34,823 4141 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 3.688 seconds (JVM running for 5.583)
+2021-03-04 09:13:16,737 46055 [Thread-11] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:13:20,538 1231 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 28324 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 09:13:20,543 1236 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 09:13:22,137 2830 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 09:13:22,153 2846 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:13:22,167 2860 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 09:13:22,167 2860 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 09:13:22,176 2869 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 09:13:22,327 3020 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 09:13:22,327 3020 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1635 ms
+2021-03-04 09:13:22,640 3333 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:13:23,032 3725 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:13:23,046 3739 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 09:13:23,167 3860 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 09:13:23,173 3866 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 3.417 seconds (JVM running for 5.321)
+2021-03-04 09:13:37,617 18310 [http-nio-8090-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 09:13:37,617 18310 [http-nio-8090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 09:13:37,626 18319 [http-nio-8090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2021-03-04 09:13:57,201 37894 [http-nio-8090-exec-2] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at java.io.File.<init>(File.java:277)
+	at com.mercury.demo.server.ProcessFileImpl.processFileImpl(ProcessFileImpl.java:41)
+	at com.mercury.demo.controller.TransResultController.engineTransChangeResult(TransResultController.java:62)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-04 09:13:57,238 37931 [Thread-10] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:16:44,979 1165 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 28432 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 09:16:44,984 1170 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 09:16:46,633 2819 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 09:16:46,651 2837 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:16:46,665 2851 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 09:16:46,665 2851 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 09:16:46,675 2861 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 09:16:46,826 3012 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 09:16:46,827 3013 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1755 ms
+2021-03-04 09:16:47,181 3367 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:16:47,581 3767 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:16:47,596 3782 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 09:16:47,735 3921 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 09:16:47,741 3927 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 3.462 seconds (JVM running for 5.746)
+2021-03-04 09:17:35,580 51766 [Thread-10] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:17:41,511 1325 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 21588 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 09:17:41,517 1331 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 09:17:43,280 3094 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 09:17:43,298 3112 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:17:43,313 3127 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 09:17:43,313 3127 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 09:17:43,323 3137 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 09:17:43,494 3308 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 09:17:43,495 3309 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1877 ms
+2021-03-04 09:17:43,887 3701 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:17:44,298 4112 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:17:44,313 4127 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 09:17:44,451 4265 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 09:17:44,455 4269 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 3.781 seconds (JVM running for 5.651)
+2021-03-04 09:17:57,663 17477 [http-nio-8090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 09:17:57,663 17477 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 09:17:57,669 17483 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2021-03-04 09:19:03,041 82855 [Thread-11] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:19:11,514 1381 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 29516 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 09:19:11,520 1387 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 09:19:13,234 3101 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 09:19:13,250 3117 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:19:13,262 3129 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 09:19:13,263 3130 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 09:19:13,273 3140 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 09:19:13,426 3293 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 09:19:13,426 3293 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1801 ms
+2021-03-04 09:19:13,745 3612 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:19:14,148 4015 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:19:14,165 4032 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 09:19:14,345 4212 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 09:19:14,359 4226 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 3.739 seconds (JVM running for 5.809)
+2021-03-04 09:19:19,122 8989 [http-nio-8090-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 09:19:19,122 8989 [http-nio-8090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 09:19:19,132 8999 [http-nio-8090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2021-03-04 09:19:19,152 9019 [http-nio-8090-exec-2] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-03-04 09:24:21,238 311105 [Thread-11] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:24:27,210 1424 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 23960 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 09:24:27,249 1463 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 09:24:29,032 3246 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 09:24:29,048 3262 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:24:29,060 3274 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 09:24:29,061 3275 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 09:24:29,071 3285 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 09:24:29,218 3432 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 09:24:29,219 3433 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1804 ms
+2021-03-04 09:24:29,540 3754 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 09:24:29,921 4135 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 09:24:29,934 4148 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 09:24:29,955 4169 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 09:24:29,960 4174 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 3.661 seconds (JVM running for 5.623)
+2021-03-04 09:24:40,829 15043 [http-nio-8090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 09:24:40,830 15044 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 09:24:40,838 15052 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 8 ms
+2021-03-04 09:24:40,860 15074 [http-nio-8090-exec-1] WARN  org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
+2021-03-04 10:21:21,440 3415654 [Thread-11] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 10:24:09,071 1472 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 13428 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 10:24:09,077 1478 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 10:24:10,867 3268 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 10:24:10,886 3287 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 10:24:10,901 3302 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 10:24:10,902 3303 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 10:24:10,911 3312 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 10:24:11,075 3476 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 10:24:11,075 3476 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1904 ms
+2021-03-04 10:24:11,394 3795 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 10:24:11,790 4191 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 10:24:11,804 4205 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 10:24:11,942 4343 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 10:24:11,948 4349 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 3.8 seconds (JVM running for 5.968)
+2021-03-04 10:24:53,185 45586 [http-nio-8090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 10:24:53,185 45586 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 10:24:53,195 45596 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2021-03-04 10:24:57,797 50198 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:24:58,348 50749 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 10:24:58,349 50750 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:24:58,351 50752 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:24:59,398 51799 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 10:24:59,398 51799 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:25:05,989 58390 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:25:06,329 58730 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 10:25:06,329 58730 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:25:06,331 58732 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:25:07,329 59730 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":4,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":4,\"wc\":\"1.0000\",\"we\":53,\"wp\":\"n\"}]},{\"bg\":54,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":54,\"wc\":\"1.0000\",\"we\":95,\"wp\":\"n\"}]},{\"bg\":96,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":96,\"wc\":\"1.0000\",\"we\":143,\"wp\":\"n\"}]},{\"bg\":144,\"cw\":[{\"sf\":0,\"w\":\"谁知\",\"wb\":144,\"wc\":\"1.0000\",\"we\":234,\"wp\":\"n\"}]}]}","onebest":"安徽省合肥市蜀山区谁知"}]}
+2021-03-04 10:25:07,330 59731 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:38:57,023 889424 [Thread-9] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 10:39:07,291 1532 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 23496 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 10:39:07,297 1538 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 10:39:09,371 3612 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 10:39:09,388 3629 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 10:39:09,402 3643 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 10:39:09,403 3644 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 10:39:09,413 3654 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 10:39:09,609 3850 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 10:39:09,610 3851 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2216 ms
+2021-03-04 10:39:09,979 4220 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 10:39:10,440 4681 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 10:39:10,458 4699 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 10:39:10,627 4868 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 10:39:10,632 4873 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 4.304 seconds (JVM running for 6.939)
+2021-03-04 10:39:12,121 6362 [http-nio-8090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 10:39:12,122 6363 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 10:39:12,131 6372 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 9 ms
+2021-03-04 10:39:18,105 12346 [http-nio-8090-exec-9] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:39:18,664 12905 [http-nio-8090-exec-9] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 10:39:18,665 12906 [http-nio-8090-exec-9] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:39:18,667 12908 [http-nio-8090-exec-9] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:39:19,797 14038 [http-nio-8090-exec-9] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":95,\"wp\":\"n\"}]},{\"bg\":96,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":96,\"wc\":\"1.0000\",\"we\":143,\"wp\":\"n\"}]},{\"bg\":144,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":144,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":194,\"wp\":\"n\"}]},{\"bg\":195,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":195,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 10:39:19,798 14039 [http-nio-8090-exec-9] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:39:27,843 22084 [http-nio-8090-exec-6] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.NullPointerException] with root cause
+java.lang.NullPointerException: null
+	at java.io.File.<init>(File.java:277)
+	at com.mercury.demo.server.ProcessFileImpl.processComFileImpl(ProcessFileImpl.java:84)
+	at com.mercury.demo.controller.TransResultController.enginetxtCompareResult(TransResultController.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:634)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2021-03-04 10:40:54,577 108818 [Thread-9] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 10:41:03,099 1673 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 12932 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 10:41:03,104 1678 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 10:41:04,976 3550 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 10:41:04,994 3568 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 10:41:05,011 3585 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 10:41:05,011 3585 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 10:41:05,022 3596 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 10:41:05,200 3774 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 10:41:05,201 3775 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1903 ms
+2021-03-04 10:41:05,521 4095 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 10:41:05,898 4472 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 10:41:05,911 4485 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 10:41:06,051 4625 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 10:41:06,057 4631 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 4.053 seconds (JVM running for 6.25)
+2021-03-04 10:41:08,950 7524 [http-nio-8090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 10:41:08,951 7525 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 10:41:08,961 7535 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 10 ms
+2021-03-04 10:42:33,001 91575 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:42:33,485 92059 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 10:42:33,485 92059 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:42:33,487 92061 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:42:34,522 93096 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":95,\"wp\":\"n\"}]},{\"bg\":96,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":96,\"wc\":\"1.0000\",\"we\":143,\"wp\":\"n\"}]},{\"bg\":144,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":144,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":194,\"wp\":\"n\"}]},{\"bg\":195,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":195,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 10:42:34,522 93096 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:42:41,449 100023 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:42:41,714 100288 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 10:42:41,715 100289 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:42:41,716 100290 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:42:42,643 101217 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 10:42:42,644 101218 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:42:42,645 101219 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:42:42,905 101479 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 10:42:42,906 101480 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:42:42,907 101481 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:42:43,806 102380 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 10:42:43,806 102380 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:42:43,826 102400 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市啊蜀山区科大讯飞股份有限公司。
+2021-03-04 10:42:43,826 102400 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省科大讯飞股份有限公司
+2021-03-04 10:42:43,847 102421 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:42:44,111 102685 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 10:42:44,112 102686 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:42:44,113 102687 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 10:42:45,180 103754 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 10:42:45,180 103754 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 10:42:45,182 103756 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：安徽省
+2021-03-04 10:42:45,182 103756 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：合肥市啊蜀山区
+2021-03-04 10:42:45,182 103756 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：科大讯飞股份有限公司
+2021-03-04 10:42:45,183 103757 [http-nio-8090-exec-8] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：。
+2021-03-04 11:05:57,959 1496533 [Thread-12] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 11:06:09,441 593  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 11:06:09,448 600  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:02:52,944 872  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:02:52,949 877  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:12:45,488 545  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:12:45,494 551  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:12:45,510 567  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 安徽省合肥
+2021-03-04 15:12:45,510 567  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 是
+2021-03-04 15:12:45,520 577  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 市
+2021-03-04 15:12:45,520 577  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 科大讯飞
+2021-03-04 15:12:45,520 577  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 股份公司
+2021-03-04 15:12:45,523 580  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 没有
+2021-03-04 15:13:53,584 736  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:13:53,591 743  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:13:53,616 768  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 安徽省合肥
+2021-03-04 15:13:53,618 770  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 是
+2021-03-04 15:13:53,631 783  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 市
+2021-03-04 15:13:53,632 784  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 科大讯飞
+2021-03-04 15:13:53,633 785  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 股份公司
+2021-03-04 15:13:53,639 791  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 没有
+2021-03-04 15:14:37,455 540  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:14:37,462 547  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:15:14,689 429  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:15:14,693 433  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:16:40,766 522  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:16:40,771 527  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:18:06,666 429  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:18:06,671 434  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:18:29,316 429  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:18:29,320 433  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:20:28,511 458  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:20:28,515 462  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:31:29,732 1757 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 24908 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 15:31:29,741 1766 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 15:31:32,076 4101 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 15:31:32,100 4125 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 15:31:32,120 4145 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 15:31:32,120 4145 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 15:31:32,132 4157 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 15:31:32,342 4367 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 15:31:32,343 4368 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2485 ms
+2021-03-04 15:31:32,781 4806 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 15:31:33,275 5300 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 15:31:33,293 5318 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 15:31:33,419 5444 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 15:31:33,424 5449 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 4.747 seconds (JVM running for 7.577)
+2021-03-04 15:31:34,699 6724 [http-nio-8090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 15:31:34,699 6724 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 15:31:34,713 6738 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 14 ms
+2021-03-04 15:31:39,494 11519 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 15:31:40,065 12090 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 15:31:40,065 12090 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 15:31:40,068 12093 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 15:31:41,684 13709 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 15:31:41,684 13709 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 15:31:41,686 13711 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 15:31:41,955 13980 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 15:31:41,955 13980 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 15:31:41,958 13983 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 15:31:42,953 14978 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 15:31:42,954 14979 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 15:31:42,975 15000 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市啊蜀山区科大讯飞股份有限公司。
+2021-03-04 15:31:42,975 15000 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省科大讯飞股份有限公司
+2021-03-04 15:31:42,983 15008 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 15:31:43,259 15284 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 15:31:43,259 15284 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 15:31:43,261 15286 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 15:31:44,283 16308 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 15:31:44,283 16308 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 15:31:44,285 16310 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：安徽省
+2021-03-04 15:31:44,285 16310 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：合肥市啊蜀山区
+2021-03-04 15:31:44,285 16310 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：科大讯飞股份有限公司
+2021-03-04 15:31:44,285 16310 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：。
+2021-03-04 15:32:38,118 70143 [Thread-12] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 15:32:48,752 1519 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 8816 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 15:32:48,758 1525 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 15:32:50,583 3350 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 15:32:50,603 3370 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 15:32:50,619 3386 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 15:32:50,620 3387 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 15:32:50,630 3397 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 15:32:50,814 3581 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 15:32:50,815 3582 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1832 ms
+2021-03-04 15:32:51,185 3952 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 15:32:51,620 4387 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 15:32:51,635 4402 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 15:32:51,782 4549 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 15:32:51,790 4557 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 4.007 seconds (JVM running for 6.759)
+2021-03-04 15:32:58,215 10982 [http-nio-8090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 15:32:58,215 10982 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 15:32:58,228 10995 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 13 ms
+2021-03-04 15:32:59,960 12727 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 15:33:00,449 13216 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 15:33:00,449 13216 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 15:33:00,452 13219 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 15:33:01,332 14099 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 15:33:01,333 14100 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 15:33:01,334 14101 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 15:33:01,610 14377 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 15:33:01,611 14378 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 15:33:01,612 14379 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 15:33:02,547 15314 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 15:33:02,548 15315 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 15:33:02,558 15325 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市啊蜀山区科大讯飞股份有限公司。
+2021-03-04 15:33:02,558 15325 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省科大讯飞股份有限公司
+2021-03-04 15:33:02,566 15333 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 15:33:02,844 15611 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 15:33:02,844 15611 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 15:33:02,846 15613 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 15:33:03,828 16595 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 15:33:03,828 16595 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 15:33:03,830 16597 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：安徽省
+2021-03-04 15:33:03,831 16598 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：合肥市啊蜀山区
+2021-03-04 15:33:03,831 16598 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：科大讯飞股份有限公司
+2021-03-04 15:33:03,831 16598 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：。
+2021-03-04 15:34:11,935 84702 [Thread-11] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-03-04 15:43:19,207 482  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:43:19,212 487  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:43:35,977 593  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:43:35,987 603  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:44:51,795 515  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:44:51,800 520  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:45:09,339 434  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:45:09,350 445  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:45:30,491 523  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:45:30,495 527  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:45:54,961 451  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:45:54,966 456  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 15:49:15,479 436  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 15:49:15,483 440  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 16:01:12,558 562  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 16:01:12,568 572  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 16:02:26,878 47040 [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 16:02:31,573 51735 [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 16:12:20,351 387  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 16:12:20,355 391  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 16:19:22,326 421  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 16:19:22,331 426  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 16:38:59,407 601  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市科大讯飞没有
+2021-03-04 16:38:59,415 609  [main] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是科大讯飞股份公司
+2021-03-04 17:05:16,422 1167 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 7480 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 17:05:16,426 1171 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 17:05:18,019 2764 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 17:05:18,035 2780 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 17:05:18,047 2792 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 17:05:18,048 2793 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 17:05:18,058 2803 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 17:05:18,212 2957 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 17:05:18,213 2958 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1713 ms
+2021-03-04 17:05:18,526 3271 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 17:05:18,916 3661 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 17:05:18,931 3676 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 17:05:18,954 3699 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 17:05:18,960 3705 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 3.246 seconds (JVM running for 5.041)
+2021-03-04 17:05:23,643 8388 [http-nio-8090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 17:05:23,644 8389 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 17:05:23,651 8396 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2021-03-04 17:05:28,639 13384 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:05:29,076 13821 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:05:29,077 13822 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:05:29,079 13824 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:05:30,870 15615 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:05:30,871 15616 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:05:30,872 15617 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:05:31,088 15833 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:05:31,088 15833 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:05:31,089 15834 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:05:32,224 16969 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:05:32,225 16970 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:05:32,243 16988 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:05:32,465 17210 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:05:32,465 17210 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:05:32,467 17212 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:05:33,364 18109 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":95,\"wp\":\"n\"}]},{\"bg\":96,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":96,\"wc\":\"1.0000\",\"we\":143,\"wp\":\"n\"}]},{\"bg\":144,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":144,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":194,\"wp\":\"n\"}]},{\"bg\":195,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":195,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:05:33,364 18109 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:05:33,369 18114 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：安徽省
+2021-03-04 17:05:33,370 18115 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：合肥市蜀山区
+2021-03-04 17:05:33,370 18115 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：科大讯飞股份有限公司
+2021-03-04 17:05:33,370 18115 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：。
+2021-03-04 17:05:33,371 18116 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市啊蜀山区科大讯飞股份有限公司。
+2021-03-04 17:05:33,371 18116 [http-nio-8090-exec-3] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省科大讯飞股份有限公司
+2021-03-04 17:14:41,237 998  [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 18652 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 17:14:41,241 1002 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 17:14:42,979 2740 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 17:14:42,995 2756 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 17:14:43,010 2771 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 17:14:43,011 2772 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 17:14:43,020 2781 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 17:14:43,182 2943 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 17:14:43,182 2943 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1854 ms
+2021-03-04 17:14:43,454 3215 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 17:14:43,802 3563 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 17:14:43,816 3577 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 17:14:43,838 3599 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 17:14:43,843 3604 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 3.211 seconds (JVM running for 4.98)
+2021-03-04 17:14:50,704 10465 [http-nio-8090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 17:14:50,704 10465 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 17:14:50,712 10473 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2021-03-04 17:14:58,667 18428 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:14:59,143 18904 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:14:59,143 18904 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:14:59,145 18906 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:15:00,155 19916 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:15:00,155 19916 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:15:00,156 19917 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:15:00,420 20181 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:15:00,420 20181 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:15:00,422 20183 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:15:02,024 21785 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":95,\"wp\":\"n\"}]},{\"bg\":96,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":96,\"wc\":\"1.0000\",\"we\":143,\"wp\":\"n\"}]},{\"bg\":144,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":144,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":194,\"wp\":\"n\"}]},{\"bg\":195,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":195,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:15:02,024 21785 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:15:02,032 21793 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:15:02,253 22014 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:15:02,253 22014 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:15:02,255 22016 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:15:03,306 23067 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:15:03,307 23068 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:15:03,311 23072 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：安徽省
+2021-03-04 17:15:03,312 23073 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：合肥市啊蜀山区
+2021-03-04 17:15:03,312 23073 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：科大讯飞股份有限公司
+2021-03-04 17:15:03,312 23073 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：。
+2021-03-04 17:15:03,325 23086 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市啊蜀山区科大讯飞股份有限公司。
+2021-03-04 17:15:03,325 23086 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省科大讯飞股份有限公司
+2021-03-04 17:15:48,741 68502 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:15:48,979 68740 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:15:48,979 68740 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:15:48,980 68741 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:15:50,014 69775 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":95,\"wp\":\"n\"}]},{\"bg\":96,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":96,\"wc\":\"1.0000\",\"we\":143,\"wp\":\"n\"}]},{\"bg\":144,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":144,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":194,\"wp\":\"n\"}]},{\"bg\":195,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":195,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:15:50,015 69776 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:15:50,016 69777 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:15:50,257 70018 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:15:50,257 70018 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:15:50,258 70019 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:15:51,157 70918 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:15:51,158 70919 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:15:51,160 70921 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:15:51,428 71189 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:15:51,428 71189 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:15:51,429 71190 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:15:52,327 72088 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:15:52,327 72088 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:15:52,329 72090 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：安徽省合肥
+2021-03-04 17:15:52,329 72090 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFileImpl - 删除：是的没错
+2021-03-04 17:15:52,330 72091 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：市啊蜀山区
+2021-03-04 17:15:52,330 72091 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：科大讯飞股份有限公司
+2021-03-04 17:15:52,330 72091 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：。
+2021-03-04 17:15:52,330 72091 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市蜀山区科大讯飞股份有限公司。
+2021-03-04 17:15:52,331 72092 [http-nio-8090-exec-10] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是的没错科大讯飞股份有限公司
+2021-03-04 17:16:21,428 101189 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:16:21,686 101447 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:16:21,686 101447 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:16:21,687 101448 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:16:23,186 102947 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:16:23,186 102947 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:16:23,188 102949 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:16:23,451 103212 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:16:23,452 103213 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:16:23,454 103215 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:16:24,581 104342 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":95,\"wp\":\"n\"}]},{\"bg\":96,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":96,\"wc\":\"1.0000\",\"we\":143,\"wp\":\"n\"}]},{\"bg\":144,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":144,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":194,\"wp\":\"n\"}]},{\"bg\":195,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":195,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:16:24,581 104342 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:16:24,584 104345 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:16:24,870 104631 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:16:24,870 104631 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:16:24,871 104632 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:16:25,971 105732 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:16:25,971 105732 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:16:25,972 105733 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：安徽省合肥
+2021-03-04 17:16:25,972 105733 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 删除：是的没
+2021-03-04 17:16:25,973 105734 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：市啊蜀山区
+2021-03-04 17:16:25,973 105734 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 相等：科大讯飞股份有限公司
+2021-03-04 17:16:25,973 105734 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 插入：。
+2021-03-04 17:16:25,973 105734 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 人工标注:安徽省合肥市啊蜀山区科大讯飞股份有限公司。
+2021-03-04 17:16:25,973 105734 [http-nio-8090-exec-5] INFO  com.mercury.demo.server.ProcessFileImpl - 引擎转写:安徽省合肥是的没科大讯飞股份有限公司
+2021-03-04 17:36:22,158 1362 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 27940 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 17:36:22,165 1369 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 17:36:23,952 3156 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 17:36:23,969 3173 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 17:36:23,982 3186 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 17:36:23,983 3187 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 17:36:23,991 3195 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 17:36:24,247 3451 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 17:36:24,247 3451 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 2007 ms
+2021-03-04 17:36:24,624 3828 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 17:36:25,004 4208 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 17:36:25,017 4221 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 17:36:25,038 4242 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 17:36:25,042 4246 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 3.722 seconds (JVM running for 6.108)
+2021-03-04 17:36:27,655 6859 [http-nio-8090-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 17:36:27,655 6859 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 17:36:27,663 6867 [http-nio-8090-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2021-03-04 17:36:29,750 8954 [http-nio-8090-exec-2] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:36:31,532 10736 [http-nio-8090-exec-2] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 17:36:31,532 10736 [http-nio-8090-exec-2] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 17:36:31,535 10739 [http-nio-8090-exec-2] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 17:36:37,700 16904 [http-nio-8090-exec-2] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 17:36:37,700 16904 [http-nio-8090-exec-2] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 18:05:28,212 1324 [main] INFO  com.mercury.demo.DemoApplication - Starting DemoApplication on kehu2 with PID 28424 (D:\Javastudy\engine-test-tool\target\classes started by kehu2 in D:\Javastudy\engine-test-tool)
+2021-03-04 18:05:28,216 1328 [main] INFO  com.mercury.demo.DemoApplication - No active profile set, falling back to default profiles: default
+2021-03-04 18:05:29,943 3055 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+2021-03-04 18:05:29,961 3073 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+2021-03-04 18:05:29,977 3089 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2021-03-04 18:05:29,977 3089 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/9.0.13
+2021-03-04 18:05:29,987 3099 [main] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Python38\Scripts\;C:\Python38\;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\bin;D:\Program Files\JDK+JRE+MAVEN\JDK\jdk1.8.0_251\jre\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\NetSarang;D:\Program Files\XShell\Xlpd 6\;D:\Program Files\XShell\Xmanager 6\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Pan Iflytek;D:\maven\apache-maven-3.5.4\bin;%GRADLE_HOME%\bin;C:\ProgramData\chocolatey\bin;D:\Program Files\nodejs;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\Git\cmd;D:\Program Files\TortoiseGit\bin;C:\Users\kehu2\.app\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;%USERPROFILE%\AppData\Local\Microsoft\WindowsApps;D:\Program Files\nodejs\node_global;%SystemRoot%\System32\Wbem;D:\Program Files\nodejs\node_global;;D:\Program Files\VScode\Microsoft VS Code\bin;.]
+2021-03-04 18:05:30,155 3267 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2021-03-04 18:05:30,156 3268 [main] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1870 ms
+2021-03-04 18:05:30,452 3564 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2021-03-04 18:05:30,874 3986 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8090"]
+2021-03-04 18:05:30,889 4001 [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2021-03-04 18:05:30,914 4026 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8090 (http) with context path ''
+2021-03-04 18:05:30,919 4031 [main] INFO  com.mercury.demo.DemoApplication - Started DemoApplication in 3.583 seconds (JVM running for 7.876)
+2021-03-04 18:05:32,322 5434 [http-nio-8090-exec-2] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-03-04 18:05:32,322 5434 [http-nio-8090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2021-03-04 18:05:32,329 5441 [http-nio-8090-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 6 ms
+2021-03-04 18:05:55,822 28934 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFileImpl - 音频文件名称与标注文件名称无法对应
+2021-03-04 18:05:56,322 29434 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 18:05:59,347 32459 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 18:05:59,347 32459 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 18:05:59,349 32461 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 18:06:00,335 33447 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":10039,"success":false,"ok":0,"failed":"download file, uri: [null] null;;"},"lattices":[]}
+2021-03-04 18:06:00,335 33447 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 18:06:00,337 33449 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 18:06:03,667 36779 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 18:06:03,667 36779 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 18:06:03,671 36783 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-03-04 18:06:05,825 38937 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":95,\"wp\":\"n\"}]},{\"bg\":96,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":96,\"wc\":\"1.0000\",\"we\":143,\"wp\":\"n\"}]},{\"bg\":144,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":144,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":194,\"wp\":\"n\"}]},{\"bg\":195,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":195,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市蜀山区科大讯飞股份有限公司。"}]}
+2021-03-04 18:06:05,825 38937 [http-nio-8090-exec-4] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-03-04 18:06:05,839 38951 [http-nio-8090-exec-4] ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/].[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+java.io.IOException: File 'C:\Users\kehu2\Desktop\test标注' exists but is a directory
+	at org.apache.commons.io.FileUtils.openInputStream(FileUtils.java:293)
+	at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1711)
+	at org.apache.commons.io.FileUtils.readFileToString(FileUtils.java:1734)
+	at com.mercury.demo.server.ProcessFileImpl.processComFileImpl(ProcessFileImpl.java:115)
+	at com.mercury.demo.controller.TransResultController.enginetxtCompareResult(TransResultController.java:71)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:800)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:660)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:741)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:791)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1417)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)

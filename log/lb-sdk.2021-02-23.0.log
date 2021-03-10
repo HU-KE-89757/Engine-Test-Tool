@@ -1,0 +1,16 @@
+2021-02-23 17:36:41,959 3456 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-23 17:37:17,267 1317 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-23 17:39:27,295 131345 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-23 17:42:13,235 799  [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-23 17:42:13,294 858  [main] ERROR com.tuling.asr.sdk.client.IstRestClient - 请求服务错误
+2021-02-23 17:42:28,084 1289 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-23 17:42:29,545 2750 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-23 17:57:08,283 1059 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-23 17:57:09,713 2489 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-23 18:03:34,692 1966 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-23 18:03:36,176 3450 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-23 18:04:12,499 13654 [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-23 18:05:49,430 110585 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===
+2021-02-23 18:06:08,385 849  [main] INFO  com.mercury.demo.server.ProcessFile - ===调用非转码引擎接口===
+2021-02-23 18:06:09,613 2077 [main] INFO  com.mercury.demo.server.ProcessFile - 引擎调用结果为：{"state":{"code":0,"success":true,"ok":1},"lattices":[{"lid":0,"spk":0,"begin":0,"end":2390,"sc":1.0,"json_cn1best":"{\"bg\":0,\"ed\":2390,\"rl\":1,\"ls\":false,\"msgtype\":\"sentence\",\"sn\":1,\"pa\":0,\"sc\":\"1.00\",\"ws\":[{\"bg\":8,\"cw\":[{\"sf\":0,\"w\":\"安徽省\",\"wb\":8,\"wc\":\"1.0000\",\"we\":52,\"wp\":\"n\"}]},{\"bg\":53,\"cw\":[{\"sf\":0,\"w\":\"合肥市\",\"wb\":53,\"wc\":\"1.0000\",\"we\":89,\"wp\":\"n\"}]},{\"bg\":90,\"cw\":[{\"sf\":0,\"w\":\"啊\",\"wb\":90,\"wc\":\"1.0000\",\"we\":94,\"wp\":\"n\"}]},{\"bg\":95,\"cw\":[{\"sf\":0,\"w\":\"蜀山区\",\"wb\":95,\"wc\":\"1.0000\",\"we\":140,\"wp\":\"n\"}]},{\"bg\":141,\"cw\":[{\"sf\":0,\"w\":\"科大讯飞\",\"wb\":141,\"wc\":\"1.0000\",\"we\":179,\"wp\":\"n\"}]},{\"bg\":180,\"cw\":[{\"sf\":0,\"w\":\"股份\",\"wb\":180,\"wc\":\"1.0000\",\"we\":197,\"wp\":\"n\"}]},{\"bg\":198,\"cw\":[{\"sf\":0,\"w\":\"有限公司\",\"wb\":198,\"wc\":\"1.0000\",\"we\":235,\"wp\":\"n\"}]},{\"bg\":235,\"cw\":[{\"sf\":0,\"w\":\"。\",\"wb\":235,\"wc\":\"0.0000\",\"we\":235,\"wp\":\"p\"}]}]}","onebest":"安徽省合肥市啊蜀山区科大讯飞股份有限公司。"}]}
+2021-02-23 18:06:09,613 2077 [main] INFO  com.mercury.demo.server.ProcessFile - ===引擎请求结束===

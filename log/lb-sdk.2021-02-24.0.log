@@ -1,0 +1,8 @@
+2021-02-24 14:57:00,570 268  [main] INFO  com.mercury.demo.util.Diff_match_patch - 两文本相同的字符数：0
+2021-02-24 14:57:00,573 271  [main] INFO  com.mercury.demo.util.Diff_match_patch - text缺少的文本数量3
+2021-02-24 14:57:00,574 272  [main] INFO  com.mercury.demo.util.Diff_match_patch - text多出的文本数量3
+2021-02-24 14:57:00,574 272  [main] INFO  com.mercury.demo.util.Diff_match_patch - 两文本相同的字符数：5
+2021-02-24 14:57:00,574 272  [main] INFO  com.mercury.demo.util.Diff_match_patch - text缺少的文本数量11
+2021-02-24 14:57:00,574 272  [main] INFO  com.mercury.demo.util.Diff_match_patch - text多出的文本数量11
+2021-02-24 14:57:00,574 272  [main] INFO  com.mercury.demo.util.Diff_match_patch - 两文本相同的字符数：15
+2021-02-24 14:57:00,574 272  [main] INFO  com.mercury.demo.util.Diff_match_patch - text多出的文本数量17
